@@ -1,8 +1,14 @@
-<section class="photo sections-bg-alt parallax-layer parallax-header no-margin-bottom padding-bottom-100" data-stellar-background-ratio="0.5">
+<?php $image_url = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>
+<?php if( has_post_thumbnail()) : ?>
+	<section class="sections-bg-alt parallax-layer no-margin-bottom padding-bottom-100 background" style="background: url( <?php echo $image_url; ?> ) no-repeat fixed; background-size: contain" data-stellar-background-ratio="0.5">
+<?php else: ?>
+	<section class="sections-bg-alt parallax-layer parallax-header no-margin-bottom padding-bottom-100 background" data-stellar-background-ratio="0.5">
+<?php endif; ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="min-height: 1px;">
-				 <a class="brand-new" href="#">SiteName.com</a>
+
+				 <a class="brand-new" href="#"><?php echo get_field( 'first_name'); echo " "; echo get_field( 'last_name' ); ?> </a>
 			</div>
 			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="min-height: 1px;">
 				<div class="dropdown pull-right">
@@ -30,12 +36,12 @@
 			<div class="hidden-xs hidden-sm col-md-2 col-lg-2">
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-				<h1 class="page-section text-center margin-top-100" style="color: rgb(255, 255, 255); margin-top: 0px;">
-					<strong>KENNETH BRADLEY</strong>
+				<h1 class="page-section text-center margin-top-100" style="color: rgba(250, 250, 250, .99); margin-top: 0px;">
+					<strong><?php echo get_field( 'first_name'); echo " "; echo get_field( 'last_name' ); ?> </strong>
 				</h1>
-				<h2 style="opacity: 1; z-index: 0;">
-					WORDPRESS THEME DEVELOPER
-				</h2> <a class="btn btn-lg btn-primary margin-top-30" href="#">HIRE ME</a>
+				<h2 class="tagline"><?php echo get_post_meta(8, 'Tag Line 1', true); ?></h2>
+				<h2 class="tagline"><?php echo get_post_meta(8, 'Tag Line 2', true); ?></h2>
+				<a class="btn btn-lg btn-primary margin-top-30" href="#">HIRE ME</a>
 			</div>
 		</div>
 	</div>
