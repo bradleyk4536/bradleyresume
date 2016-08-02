@@ -20,22 +20,17 @@
 										<img class="img-responsive img-center" src="<?php bloginfo('template_directory'); ?>/assets/images/img-member-thumb.jpg" alt="thumb" />
 										<div class="box-wrap">
 											<h4>
-												JOHN DOE<br /><small>CEO, marketing guru</small>
+												Omnifoods<br /><small>CEO, marketing guru</small>
 											</h4>
 											<ul class="list-inline">
 												<li>
-													<a class="circle-icon-bg" href="#"><i class="fa fa-dribbble fa-2x"></i></a>
+													<a class="circle-icon-bg" href="#"><i class="fa fa-github-alt"></i></a>
 												</li>
 												<li>
-													<a class="circle-icon-bg" href="#"><i class="fa fa-facebook fa-2x"></i></a>
-												</li>
-												<li>
-													<a class="circle-icon-bg" href="#"><i class="fa fa-twitter fa-2x"></i></a>
-												</li>
-												<li>
-													<a class="circle-icon-bg" href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+													<a class="circle-icon-bg" href="#"><i class="fa fa-book"></i></a>
 												</li>
 											</ul>
+											<p>Hand coded Object Oriented PHP CMS</p>
 										</div>
 									</div>
 								</div>

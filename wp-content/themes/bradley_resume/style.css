@@ -1249,8 +1249,8 @@ footer.section-blured .footer-nav-links{
 
 
 .parallax-header {
-	background: url('assets/images/full_desk.jpg') no-repeat fixed;
-	background-size: contain;
+	background: linear-gradient(rgba(78, 78, 78, 0.75), rgba(78, 78, 78, 0.75)), url('assets/images/full_desk.jpg') no-repeat fixed;
+	background-size: cover;
 }
 
 .parallax-header-2{
@@ -2069,7 +2069,7 @@ div.row.col-xs-7 { min-height: 1px; }
 div.row { padding-top: 20px; }
 
 .tagline {
-	color: rgba(250, 250, 250, 0.99);
+	color: rgba(250, 250, 250, 0.7);
 	opacity: 1;
 	z-index: 0;
 
