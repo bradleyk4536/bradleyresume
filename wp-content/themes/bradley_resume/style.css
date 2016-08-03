@@ -398,6 +398,7 @@ body {
 	background: url(assets/images/tile.jpg) top right repeat; background-color: #fff;
 }
 
+
 h1 {
     margin-top: 0;
     margin-bottom: 20px;
@@ -1249,7 +1250,7 @@ footer.section-blured .footer-nav-links{
 
 
 .parallax-header {
-	background: linear-gradient(rgba(78, 78, 78, 0.75), rgba(78, 78, 78, 0.75)), url('assets/images/full_desk.jpg') no-repeat fixed;
+	background: url('assets/images/full_desk.jpg') no-repeat fixed;
 	background-size: cover;
 }
 
@@ -2075,4 +2076,4 @@ div.row { padding-top: 20px; }
 
 }
 
-
+.what {}
