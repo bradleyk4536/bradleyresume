@@ -12,59 +12,27 @@
 ?>
 
 <?php wp_footer(); ?>
-<footer class="section-dark" style="display: block;">
-	<div>
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="min-height: 1px;">
-					<div class="row">
-						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="min-height: 1px;">
-						</div>
-						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="min-height: 1px;">
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="min-height: 1px;">
-							<h3 style="opacity: 1; z-index: 0; border-left-style: solid; border-left-width: 0px; margin-left: 60px; margin-top: 120px;">
-								Kenneth G Bradley
-							</h3>
-							<p style="opacity: 1; z-index: 0; margin-left: 70px;">
-								Cell Phone: 540-735-4217
-							</p>
-							<p style="opacity: 1; z-index: 0; margin-left: 70px;">
-								Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
-							</p>
-						</div>
-						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="min-height: 1px;">
-							<hr />
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="min-height: 1px;">
-					<h4 class="center" style="margin-bottom: 25px;">
-						EMAIL ME
-					</h4>
-					<form id="ajax-contacts">
-						<fieldset>
-							<div class="form-group">
-								 <label for="name">Name</label><input class="form-control text-center" type="text" name="name" />
-							</div>
-							<div class="form-group">
-								 <label for="email">E-Mail</label><input class="form-control text-center" type="text" name="email" /><br />
-							</div>
-							<div class="form-group">
-								 <label for="message">Comments</label>
-								<textarea class="form-control text-center" name="message" rows="5" cols="25">
-								</textarea><br />
-							</div>
-							<div class="form-group text-right">
-								<label for="submit"></label><input class="btn btn-lg btn-info" type="submit" name="submit" value="Send Message" />
-							</div>
-						</fieldset>
-					</form>
-				</div>
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				<a class="navbar-brand" href="#"><?php bloginfo('name'); ?></a>
+			</div>
+			<div class="footer_nav col-sm-5">
+
+				<?php
+wp_nav_menu( array(
+	'theme_location'  => 'footer',
+	'container' 		=> 'nav',
+	'menu_class' 		=> 'list-unstyled list-inline'
+));
+?>
+			</div>
+			<div class="col-sm-4">
+			<p class=" copy-author">&copy; <?php echo date('Y') . ' '; the_author_meta('user_url'); ?></p>
 			</div>
 		</div>
+
 	</div>
 </footer>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

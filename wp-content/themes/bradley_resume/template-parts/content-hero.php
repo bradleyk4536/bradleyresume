@@ -5,33 +5,7 @@
 	<section class="sections-bg-alt parallax-layer parallax-header no-margin-bottom padding-bottom-100 background what" data-stellar-background-ratio="0.5">
 <?php endif; ?>
 	<div class="container">
-		<div class="row">
-			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="min-height: 1px;">
 
-				 <a class="brand-new" href="#"><?php echo get_field( 'first_name'); echo " "; echo get_field( 'last_name' ); ?> </a>
-			</div>
-			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="min-height: 1px;">
-				<div class="dropdown pull-right">
-					 <button class="btn btn-black dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"><i class="fa fa-bars"></i></button>
-					<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-						<li role="presentation">
-							<a role="menuitem" tabindex="-1" href="#">Action</a>
-						</li>
-						<li role="presentation">
-							<a role="menuitem" tabindex="-1" href="#">Another action</a>
-						</li>
-						<li role="presentation">
-							<a role="menuitem" tabindex="-1" href="#">Something else here</a>
-						</li>
-						<li role="presentation" class="divider">
-						</li>
-						<li role="presentation">
-							<a role="menuitem" tabindex="-1" href="#">Separated link</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
 		<div class="row text-center">
 			<div class="hidden-xs hidden-sm col-md-2 col-lg-2">
 			</div>
