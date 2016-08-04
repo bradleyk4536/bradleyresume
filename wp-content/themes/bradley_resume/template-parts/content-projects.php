@@ -4,7 +4,7 @@
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<hr />
 				<h3 class="page-section text-center profile"><?php echo get_field('project_header'); ?></h3>
-
+<!--				TEMP NOTE-->
 			<?php if(!empty(get_field('project_statement'))) : ?>
 				<p class="lead text-center"><?php the_field('project_statement'); ?></p>
 			<?php endif; ?>
