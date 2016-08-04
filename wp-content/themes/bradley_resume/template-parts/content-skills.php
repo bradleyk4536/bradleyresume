@@ -2,7 +2,6 @@
 	<div class="container">
 		<div class="row divider">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<hr />
 				<h3 class="text-center profile"><?php echo get_field( 'skills_header' ); ?></h3>
 				<?php if(!empty(get_field( 'skills_statement' )) ) : ?>
 				<p class="lead text-center"><?php the_field('skills_statement'); ?></p>
