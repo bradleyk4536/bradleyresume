@@ -82,6 +82,7 @@
 						<?php if(get_field('show_details_description') === 'true') : ?>
 							<li><a class="circle-icon-bg" href="<?php the_permalink(); ?>"><i class="fa fa-book"></i></a></li>
 						<?php endif; ?>
+
 						</ul>
 						<p><?php the_excerpt(); ?></p>
 					</div>
