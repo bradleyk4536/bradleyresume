@@ -90,7 +90,7 @@
 						</div>
 					</div>
 				</div>
-			<?php endwhile; wp_reset_postdata(); ?>
+			<?php endwhile; ?>
 		</div>
 	</div>
 <?php endif; ?>
@@ -99,6 +99,7 @@
 <?php if($counter > 4) :  ?>
 			 <a class="left carousel-control" href="#carousel-347740" data-slide="prev"><i class="fa fa-angle-left fa-4x"></i></a> <a class="right carousel-control" href="#carousel-347740" data-slide="next"><i class="fa fa-angle-right fa-4x"></i></a>
 <?php endif; ?>
+<?php wp_reset_postdata(); ?>
 		</div>
 	</div>
 </div>

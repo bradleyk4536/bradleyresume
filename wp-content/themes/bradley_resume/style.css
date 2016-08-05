@@ -2108,3 +2108,11 @@ div.row { padding-top: 20px; }
 /*DARKEN EVEN SECTION OF HOME PAGE*/
 
 section:nth-of-type(even) {background-color: rgba(250, 250, 250, 0.7);}
+
+/* MODAL */
+
+#contact_modal
+{
+top:30%;
+outline: none;
+}

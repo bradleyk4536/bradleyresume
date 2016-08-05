@@ -15,7 +15,7 @@
 				</h1>
 				<h2 class="tagline"><?php bloginfo('description'); ?></h2>
 				<h2 class="tagline"><?php echo get_post_meta(8, 'Tag Line 2', true); ?></h2>
-				<a class="btn btn-lg btn-primary margin-top-30" href="#">HIRE ME</a>
+				<a class="btn btn-lg btn-primary margin-top-30" href="#" data-toggle="modal" data-target="#contact_modal">HIRE ME</a>
 			</div>
 		</div>
 	</div>
