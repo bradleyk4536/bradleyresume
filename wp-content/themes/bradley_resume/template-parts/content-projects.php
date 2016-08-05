@@ -36,11 +36,14 @@
 								<?php endif; ?>
 								</h4>
 								<ul class="list-inline">
-								<?php if(!empty(get_field( 'github_url' ))) : ?>
+
+								<?php if(!empty(get_field( 'github_url' )) && get_field('show_github_link') === 'true') : ?>
 									<li>
 										<a class="circle-icon-bg" href="<?php the_field( 'github_url' ); ?>"><i class="fa fa-github-alt"></i></a>
 									</li>
 								<?php endif; ?>
+
+
 								<?php if(get_field('show_details_description') === 'true') : ?>
 									<li>
 										<a class="circle-icon-bg" href="<?php the_permalink(); ?>"><i class="fa fa-book"></i></a>
@@ -74,7 +77,7 @@
 						<?php endif; ?>
 						</h4>
 						<ul class="list-inline">
-						<?php if(!empty(get_field( 'github_url' ))) : ?>
+						<?php if(!empty(get_field( 'github_url' )) && get_field('show_github_link') === 'true') : ?>
 							<li>
 								<a class="circle-icon-bg" href="<?php the_field( 'github_url' ); ?>"><i class="fa fa-github-alt"></i></a>
 							</li>
@@ -82,33 +85,21 @@
 						<?php if(get_field('show_details_description') === 'true') : ?>
 							<li><a class="circle-icon-bg" href="<?php the_permalink(); ?>"><i class="fa fa-book"></i></a></li>
 						<?php endif; ?>
-
 						</ul>
 						<p><?php the_excerpt(); ?></p>
 					</div>
 				</div>
-<<<<<<< HEAD
-			</div>
-		<?php endwhile; wp_reset_postdata(); ?>
+		<?php endwhile; ?>
 	</div>
-=======
-			<?php endwhile; ?>
-		</div>
->>>>>>> homepage
-	</div>
+</div>
+</div>
 <?php endif; ?>
-					</div>
-<!--		SHOW NAVIGATION IF PROJECTS ARE GREATER THAN 4			-->
-<<<<<<< HEAD
-		<?php if($counter > 4) :  ?>
-					 <a class="left carousel-control" href="#carousel-347740" data-slide="prev"><i class="fa fa-angle-left fa-4x"></i></a> <a class="right carousel-control" href="#carousel-347740" data-slide="next"><i class="fa fa-angle-right fa-4x"></i></a>
-		<?php endif; ?>
-=======
+</div>
+
 <?php if($counter > 4) :  ?>
 			 <a class="left carousel-control" href="#carousel-347740" data-slide="prev"><i class="fa fa-angle-left fa-4x"></i></a> <a class="right carousel-control" href="#carousel-347740" data-slide="next"><i class="fa fa-angle-right fa-4x"></i></a>
 <?php endif; ?>
 <?php wp_reset_postdata(); ?>
->>>>>>> homepage
 		</div>
 	</div>
 </div>
