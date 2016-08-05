@@ -87,16 +87,28 @@
 						<p><?php the_excerpt(); ?></p>
 					</div>
 				</div>
+<<<<<<< HEAD
 			</div>
 		<?php endwhile; wp_reset_postdata(); ?>
 	</div>
+=======
+			<?php endwhile; ?>
+		</div>
+>>>>>>> homepage
 	</div>
 <?php endif; ?>
 					</div>
 <!--		SHOW NAVIGATION IF PROJECTS ARE GREATER THAN 4			-->
+<<<<<<< HEAD
 		<?php if($counter > 4) :  ?>
 					 <a class="left carousel-control" href="#carousel-347740" data-slide="prev"><i class="fa fa-angle-left fa-4x"></i></a> <a class="right carousel-control" href="#carousel-347740" data-slide="next"><i class="fa fa-angle-right fa-4x"></i></a>
 		<?php endif; ?>
+=======
+<?php if($counter > 4) :  ?>
+			 <a class="left carousel-control" href="#carousel-347740" data-slide="prev"><i class="fa fa-angle-left fa-4x"></i></a> <a class="right carousel-control" href="#carousel-347740" data-slide="next"><i class="fa fa-angle-right fa-4x"></i></a>
+<?php endif; ?>
+<?php wp_reset_postdata(); ?>
+>>>>>>> homepage
 		</div>
 	</div>
 </div>
