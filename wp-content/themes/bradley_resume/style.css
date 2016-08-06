@@ -436,7 +436,7 @@ header{
 	width:100%;
 }
 section{
-	padding-top:100px;
+	padding-top:25px;
 	padding-bottom:0px;
 	padding-right:0px;
 	padding-left:0px;
@@ -2116,3 +2116,34 @@ section:nth-of-type(even) {background-color: rgba(250, 250, 250, 0.7);}
 top:30%;
 outline: none;
 }
+
+.carousel-inner>.item>img {
+
+width: 600px;
+height: 500px;
+padding-bottom: 100px
+}
+
+.carousel-caption {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #000;
+    text-shadow: none;
+    }
+
+.slider_header,
+.slider_tagline,
+.slider_description { color: rgba(250, 250, 250, 0.7); width: 50%; margin: 0 auto;
+}
+
+.slider_header { padding-bottom: 15px; font-size: 200%; }
+
+.slider_tagline{ padding-bottom: 15px; font-size: 100%; }
+
+.carousel-caption p { font-size: 85%; }
+
