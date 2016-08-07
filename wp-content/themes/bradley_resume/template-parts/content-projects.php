@@ -68,7 +68,7 @@
 <!--			GIVE A FEATURE IMAGE A CLASS						-->
 					<?php the_post_thumbnail('thumbnail', array('class' => 'img-responsive img-center')); ?>
 				<?php else : ?>
-					<img class="img-responsive img-center" src="<?php bloginfo('template_directory'); ?>/assets/images/img-member-thumb.jpg" alt="thumb" />
+					<img class="img-responsive center-block" src="<?php bloginfo('template_directory'); ?>/assets/images/img-member-thumb.jpg" alt="thumb" />
 				<?php endif; ?>
 					<div class="box-wrap">
 						<h4><?php the_title(); ?>

@@ -93,8 +93,8 @@ function bradley_resume_widgets_init() {
 		'description'   => esc_html__( 'Add widgets here.', 'bradley_resume' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
 	) );
 }
 add_action( 'widgets_init', 'bradley_resume_widgets_init' );
@@ -139,3 +139,18 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+* EXECUTE PHP IN TEXT WIDGETS.
+*/
+
+add_filter('widget_text','execute_php',100);
+function execute_php($html){
+     if(strpos($html,"<"."?php")!==false){
+          ob_start();
+          eval("?".">".$html);
+          $html=ob_get_contents();
+          ob_end_clean();
+     }
+     return $html;
+}
