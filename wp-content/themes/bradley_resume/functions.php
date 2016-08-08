@@ -96,6 +96,15 @@ function bradley_resume_widgets_init() {
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
 	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Training Sidebar', 'bradley_resume' ),
+		'id'            => 'sidebar-2',
+		'description'   => esc_html__( 'Add widgets here.', 'bradley_resume' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
 }
 add_action( 'widgets_init', 'bradley_resume_widgets_init' );
 
@@ -154,3 +163,12 @@ function execute_php($html){
      }
      return $html;
 }
+
+/**
+* ADD CLASS TO MENU ANCHOR TAGS.
+*/
+
+function add_menuclass($ulclass) {
+return preg_replace('/<a rel="add_class"/', '<a rel="add_class" style="color: #777"', $ulclass, 1);
+}
+add_filter('wp_nav_menu','add_menuclass');

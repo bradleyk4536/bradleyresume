@@ -20,7 +20,7 @@
 		<?php $counter = 0; ?>
 		<?php $loop = new Wp_Query(array('post_type' => 'projects', 'orderby' => 'post_id', 'order' => 'ASC')); ?>
 				<?php while($loop->have_posts() && $counter < 4) : $loop->the_post(); $counter++; ?>
-					<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 text-center">
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 text-center">
 						<div class="thumbnail relative">
 						<?php if(has_post_thumbnail()) : ?>
 		<!--			GIVE A FEATURE IMAGE A CLASS						-->

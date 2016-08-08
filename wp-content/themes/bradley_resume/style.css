@@ -460,14 +460,24 @@ footer { background-color: #333; font-size: 80%; }
     color: #777;
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
-
 }
+
+div.col-sm-3 .navbar-brand {padding: 0px }
+div.col-sm-3 a:hover,
+div.col-sm-3 a:active { color: white; }
+
 a.navbar-brand,
 .copy-author,
 nav ul li.page_item a { color: #777;}
 
-.navbar-brand {padding: 0px}
+.navbar-brand {padding: 15px 0 0 55px}
+
 .footer_nav, .copy-author {font-size: 18px;}
+
+
+
+li.page_item a { color: rgba(250, 250, 250, 0.7)}
+
 /*
 footer{
 	padding:50px 0 0;
@@ -1272,7 +1282,7 @@ footer.section-blured .footer-nav-links{
 
 
 .parallax-header {
-	background: url('assets/images/full_desk.jpg') no-repeat fixed;
+	background: url('assets/images/editor2.jpg') no-repeat fixed;
 	background-size: cover;
 }
 
@@ -1584,10 +1594,12 @@ background-color: rgba(0,0,0,0);
 		margin:10px 0;
 	}
 
+/*
 .footer-nav-links{
 	padding-left:20px;
 	margin-left:20px;
 	border-left:1px solid rgba(50,50,50, .6);
+*/
 
 }
 
@@ -2103,7 +2115,12 @@ div.row { padding-top: 20px; }
 /*MAKE SURE SELECTED MENU ITEM ARE WHEN WHEN PAGE IS SHOWN*/
 
 .navbar-nav > li.current_page_item a,
-.navbar-nav > li.current_page_parent a {color:white;}
+.navbar-nav > li.current_page_parent a {
+
+	color:white;
+	padding-right: 75px;
+}
+.navbar-inverse .navbar-nav>li>a { padding-right: 75px; }
 
 /*DARKEN EVEN SECTION OF HOME PAGE*/
 
@@ -2224,4 +2241,12 @@ section#item_detail {background-color: rgba(239, 239, 239, 0.7); margin-bottom: 
 
 .btn-ghost:hover,
 .btn-ghost:active { border: 1px solid #5bc0de; color: #fff; }
+
+
+
+@media screen and ( max-width: 568px ) {
+	small { display: none; }
+	div .box-wrap ul ~ p { display: none; }
+}
+
 
