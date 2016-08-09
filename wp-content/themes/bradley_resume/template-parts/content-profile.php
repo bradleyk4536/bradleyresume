@@ -24,7 +24,7 @@
 				<h4 class="text-danger"><?php the_title(); ?></h4>
 				<p class="margin-top-20"><?php the_content(); ?></p>
 				<?php endwhile; wp_reset_postdata(); ?>
-				<a class="btn btn-info pull-right btn-lg set-button">Technical Writer Resume</a>
+				<a href="technical-writer-resume" class="btn btn-info pull-right btn-lg set-button">Technical Writer Resume</a>
 			</div>
 		</div>
 	</div>

@@ -2117,10 +2117,10 @@ div.row { padding-top: 20px; }
 .navbar-nav > li.current_page_item a,
 .navbar-nav > li.current_page_parent a {
 
-	color:white;
-	padding-right: 75px;
+	color: white;
+	padding-left: 30px;
 }
-.navbar-inverse .navbar-nav>li>a { padding-right: 75px; }
+
 
 /*DARKEN EVEN SECTION OF HOME PAGE*/
 
@@ -2164,8 +2164,14 @@ padding-bottom: 80px;
 
 .carousel-caption p { font-size: 85%; }
 
-.project_summary { background-color: #fff; border-top-left-radius: 40px; }
-.project_summary h4 {
+.project_summary,
+.resume { background-color: #fff; margin-bottom: 30px;}
+.left_top_radius {border-top-left-radius: 40px;}
+.left_bottom_radius {border-bottom-left-radius: 40px; }
+
+
+.project_summary h4,
+.resume h4 {
 
 	display:block;
 	border-bottom: 1px solid rgba(221, 221, 221, 0.7);
@@ -2177,7 +2183,8 @@ padding-bottom: 80px;
 
 }
 
-.project_summary p {
+.project_summary p,
+.resume p {
 
 	margin: 5px 20px;
 	padding-bottom: 10px;
@@ -2185,12 +2192,20 @@ padding-bottom: 80px;
 }
 
 .project_summary ol { margin: 0 20px; }
+.resume ol { margin: 0 20px; }
 .project_summary ol li {
 	padding-left: 10px;
 	font-size: 85%;
 }
 
+.resume ol li {
+	padding-left: 10px;
+	font-size: 85%;
+}
+
 .project_summary ol li:last-child {padding-bottom: 20px; }
+.resume ol li:last-child {padding-bottom: 20px; }
+
 
 .site_button {padding-top: 15px;}
 
@@ -2243,10 +2258,8 @@ section#item_detail {background-color: rgba(239, 239, 239, 0.7); margin-bottom: 
 .btn-ghost:active { border: 1px solid #5bc0de; color: #fff; }
 
 
-
 @media screen and ( max-width: 568px ) {
 	small { display: none; }
 	div .box-wrap ul ~ p { display: none; }
 }
-
 

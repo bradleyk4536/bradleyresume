@@ -20,7 +20,7 @@
 		<div class="row">
 			<div class="col-sm-8">
 				<article>
-				<div class="project_summary">
+				<div class="project_summary left_top_radius">
 					<div>
 					<h4 class="widget-title">Course Summary</h4>
 					</div>
