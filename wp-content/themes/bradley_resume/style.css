@@ -468,7 +468,8 @@ div.col-sm-3 a:active { color: white; }
 
 a.navbar-brand,
 .copy-author,
-nav ul li.page_item a { color: #777;}
+nav ul li.page_item a,
+nav ul li.menu-item a { color: #777;}
 
 .navbar-brand {padding: 15px 0 0 55px}
 

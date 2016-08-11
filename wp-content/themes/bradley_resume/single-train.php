@@ -18,7 +18,7 @@
 <section id="item_detail">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-8">
+			<div class="col-sm-8 col-sm-offset-2">
 				<article>
 				<div class="project_summary left_top_radius">
 					<div>
@@ -35,9 +35,6 @@
 				<?php endwhile; endif; wp_reset_postdata(); ?>
 				</article>
 			</div>
-			<aside class="col-sm-4">
-				<?php dynamic_sidebar('sidebar-2'); ?>
-			</aside>
 		</div>
 	</div>
 </section>

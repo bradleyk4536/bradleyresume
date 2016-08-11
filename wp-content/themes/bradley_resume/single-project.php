@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <section class="custom-header parallax-header-2 margin-bottom-50" data-stellar-background-ratio="0.5" style="display: block; background-position: 0% 276.233px;">
 	<?php if(have_posts()) : while(have_posts()) : the_post(); $image1 = get_field('image_1'); $image2 = get_field('image_2'); $image3 = get_field('image_3'); $active_image = get_field('active_image')?>
 	<div id="carousel-499677" class="carousel slide" data-ride="carousel">
