@@ -16,7 +16,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-3">
-				<a class="navbar-brand" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+
+
 			</div>
 			<div class="footer_nav col-sm-5">
 

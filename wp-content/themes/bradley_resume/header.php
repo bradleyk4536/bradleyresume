@@ -28,7 +28,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'bradley_resume' ); ?></a>
-<!-- CUSTOM THEME NAVIGATION BAR FOR OMNIFOODS-->
+<!-- CUSTOM THEME NAVIGATION BAR-->
 <header class="site-header" role="banner"><!--	NAVBAR-->
 	<div class="navbar-wraper">
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">

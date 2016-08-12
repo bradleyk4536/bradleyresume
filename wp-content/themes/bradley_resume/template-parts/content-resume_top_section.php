@@ -6,14 +6,11 @@
 		<?php if(!empty(get_field('top_icon'))) : ?>
 			<i class="<?php the_field('top_icon'); ?>" aria-hidden="true"></i>
 		<?php endif; ?>
-
 		<?php echo get_field('top_section_header'); ?></h4>
 		<?php $loop = new Wp_query(array('post_type' => 'work_experience', 'orderby' => 'post_id', 'order' => 'ASC')); ?>
-			<?php while($loop->have_posts()) : $loop->the_post();
-
+		<?php while($loop->have_posts()) : $loop->the_post();
 				$workEnd = null;
 				$workStart = new DateTime(get_field('start_date'));
-
 				if(!empty(get_field('end_date'))) :
 					$workEnd = new DateTime(get_field('end_date'));
 				endif;

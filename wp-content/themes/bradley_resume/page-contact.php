@@ -1,5 +1,4 @@
 <?php /* TEMPLATE NAME: Hire Me Page */ ?>
-
 <?php get_header(); ?>
 <section class="sections-bg-alt parallax-layer parallax-header no-margin-bottom padding-bottom-100 background what" data-stellar-background-ratio="0.5">
 
