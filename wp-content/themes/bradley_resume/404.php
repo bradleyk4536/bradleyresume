@@ -50,7 +50,7 @@ get_header(); ?>
 			<hr>
 <?php $loop = new Wp_Query(array('post_type' => 'training', 'orderby' => 'post_id', 'order' => 'ASC')); ?>
 		<?php while($loop->have_posts()) : $loop->the_post(); ?>
-			<span style="padding: 0 0 0px 10px; display:inline-block; margin-bottom: 10px;"><a href="<?php the_permalink(); ?>" class="btn btn-ghost"><?php the_title(); ?></a></span>
+			<span style="padding-left: 10px; display:inline-block; margin-bottom: 10px;"><a href="<?php the_permalink(); ?>" class="btn btn-ghost"><?php the_title(); ?></a></span>
 		<?php endwhile; wp_reset_postdata(); ?>
 			<p>&emsp;</p>
 		</div>
@@ -62,7 +62,7 @@ get_header(); ?>
 			<hr>
 <?php $loop = new Wp_Query(array('post_type' => 'projects', 'orderby' => 'post_id', 'order' => 'ASC'));?>
 		<?php while($loop->have_posts()) : $loop->the_post(); ?>
-			<span style="padding-left: 10px;"><a href="<?php the_permalink(); ?>" class="btn btn-ghost"><?php the_title(); ?></a></span>
+			<span style="padding-left: 10px; display:inline-block; margin-bottom:10px"><a href="<?php the_permalink(); ?>" class="btn btn-ghost"><?php the_title(); ?></a></span>
 		<?php endwhile; wp_reset_postdata(); ?>
 			<p>&emsp;</p>
 		</div>

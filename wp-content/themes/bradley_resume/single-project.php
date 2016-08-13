@@ -71,7 +71,7 @@
 				<article>
 					<div class="project_summary left_top_radius">
 						<div>
-						<h4 class="widget-title">Project Summary</h4>
+						<h4 class="widget-title">Summary</h4>
 						<p><?php the_content(); ?></p>
 						</div>
 					</div>

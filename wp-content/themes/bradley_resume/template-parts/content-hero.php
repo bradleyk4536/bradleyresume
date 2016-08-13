@@ -13,8 +13,8 @@
 				<h1 class="page-section text-center margin-top-100" style="color: rgba(250, 250, 250, .8); margin-top: 0px;">
 					<strong><?php echo get_field( 'first_name'); echo " "; echo get_field( 'last_name' ); ?> </strong>
 				</h1>
-				<h2 class="tagline"><?php bloginfo('description'); ?></h2>
-				<h2 class="tagline"><?php echo get_post_meta(8, 'Tag Line 2', true); ?></h2>
+				<h3 class="tagline"><?php bloginfo('description'); ?></h3>
+				<h3 class="tagline"><?php echo get_post_meta(8, 'Tag Line 2', true); ?></h3>
 <!--				<a class="btn btn-lg btn-primary margin-top-30" href="#" data-toggle="modal" data-target="#contact_modal">HIRE ME</a>-->
 				<a class="btn btn-lg btn-primary margin-top-30" href="contact">HIRE ME</a>
 			</div>

@@ -11,7 +11,8 @@
 				<h1 class="page-section text-center margin-top-100" style="color: rgba(250, 250, 250, .8); margin-top: 0px;">
 				<?php bloginfo('name'); ?>
 				</h1>
-				<h2 class="tagline"><?php bloginfo('description'); ?></h2>
+				<h3 class="tagline"><?php bloginfo('description'); ?></h3>
+				<h3 class="tagline"><?php bloginfo?></h3>
 			</div>
 		</div>
 	</div>
