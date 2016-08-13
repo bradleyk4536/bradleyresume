@@ -172,3 +172,8 @@ function add_menuclass($ulclass) {
 return preg_replace('/<a rel="add_class"/', '<a rel="add_class" style="color: #777"', $ulclass, 1);
 }
 add_filter('wp_nav_menu','add_menuclass');
+
+/**
+* REMOVE WP VERSION NUMBER
+*/
+add_filter('the_generator', '__return_null');
