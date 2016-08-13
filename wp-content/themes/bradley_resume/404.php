@@ -56,9 +56,9 @@ get_header(); ?>
 		</div>
 		<div class="resume left_top_radius">
 			<div>
-			<h4 class="widget-title">Projects</h4>
+			<h4 class="widget-title">Portfolio</h4>
 			</div>
-			<p>Were you looking for one of my projects. If so just click one of the buttons below.</p>
+			<p>Perhaps you were looking for one of my portfolio projects. If so just click one of the buttons below.</p>
 			<hr>
 <?php $loop = new Wp_Query(array('post_type' => 'projects', 'orderby' => 'post_id', 'order' => 'ASC'));?>
 		<?php while($loop->have_posts()) : $loop->the_post(); ?>
