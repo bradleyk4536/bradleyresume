@@ -42,7 +42,7 @@ get_header(); ?>
 
 			<br>
 		</div>
-		<div class="resume left_top_radius">
+		<div class="resume">
 			<div>
 			<h4 class="widget-title">Web Development Training</h4>
 			</div>
@@ -54,7 +54,7 @@ get_header(); ?>
 		<?php endwhile; wp_reset_postdata(); ?>
 			<p>&emsp;</p>
 		</div>
-		<div class="resume left_top_radius">
+		<div class="resume left_bottom_radius">
 			<div>
 			<h4 class="widget-title">Portfolio</h4>
 			</div>

@@ -19,7 +19,7 @@
 		<?php $counter = 0; ?>
 		<?php $loop = new Wp_Query(array('post_type' => 'projects', 'orderby' => 'post_id', 'order' => 'ASC')); ?>
 				<?php while($loop->have_posts() && $counter < 4) : $loop->the_post(); $counter++; ?>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 text-center">
+					<div class="col-xs-8 col-sm-4 col-md-3 col-lg-3 text-center">
 						<?php get_template_part('template-parts/content', 'projects_html'); ?>
 					</div>
 				<?php endwhile; ?>
@@ -30,7 +30,7 @@
 <div class="item">
 	<div class="row">
 		<?php while($loop->have_posts()) : $loop->the_post(); $counter++; ?>
-			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 text-center">
+			<div class="col-xs-8 col-sm-4 col-md-3 col-lg-3 text-center">
 				<?php get_template_part('template-parts', 'projects_html'); ?>
 		<?php endwhile; ?>
 	</div>

@@ -24,13 +24,17 @@
 					<div>
 					<h4 class="widget-title">Course Summary</h4>
 					</div>
-					<div class="text-center">
-						<?php if(has_post_thumbnail()) : the_post_thumbnail(array(400, 400)); endif; ?>
+					<div class="thumbnail">
+						<?php if(has_post_thumbnail()) : the_post_thumbnail(array(
+						'class' => 'img-responsive center-block',
+						'size'  => 400, 400
+
+						)); endif; ?>
 						<hr>
-						</div>
 						<div>
 							<p><?php the_content(); ?></p>
 						</div>
+					</div>
 				</div>
 				<?php endwhile; endif; wp_reset_postdata(); ?>
 				</article>

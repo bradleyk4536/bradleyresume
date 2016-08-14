@@ -489,9 +489,10 @@ footer{
 }
 */
 
-
+.thumbnail {border: none }
 .thumbnail .img-responsive{
 	min-width:100%;
+
 }
 
 /* Sections custom styles */
